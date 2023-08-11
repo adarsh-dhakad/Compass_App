@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "231013633543",
+    "project_id": "compass-app-f9a6d",
+    "storage_bucket": "compass-app-f9a6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231013633543:android:f9512089140abb752a24a2",
+        "android_client_info": {
+          "package_name": "adarsh.compass.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231013633543-2i2hekssiohjjha9jfc2ipbcq2vurnd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpsE0VNrMaUYspCO_KB2o_iPfB3tZbpz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231013633543-2i2hekssiohjjha9jfc2ipbcq2vurnd0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

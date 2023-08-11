@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spanish -->
+    <string name="app_name">brújula</string>
+
+    <string name="sensor_status">estado de los sensores</string>
+    <string name="action_screen_rotation">Rotación de la pantalla de bloqueo</string>
+    <string name="action_night_mode">Cambiar modo noche</string>
+    <string name="about">acerca de</string>
+
+    <string name="compass_rose_image_description">Rosa de los vientos mostrando el norte magnético</string>
+    <string name="device_heading_indicator_image_description">Indica en qué dirección apunta el dispositivo</string>
+
+    <string name="status_degrees_text_description">grados de la brújula</string>
+    <string name="status_cardinal_direction_text_description">Dirección cardinal de la brújula</string>
+
+    <string name="cardinal_direction_north">norte</string>
+    <string name="cardinal_direction_northeast">Noreste</string>
+    <string name="cardinal_direction_east">este</string>
+    <string name="cardinal_direction_southeast">Sureste</string>
+    <string name="cardinal_direction_south">sur</string>
+    <string name="cardinal_direction_southwest">Sur oeste</string>
+    <string name="cardinal_direction_west">Oeste</string>
+    <string name="cardinal_direction_northwest">noroeste</string>
+
+    <string name="cardinal_direction_north_abbreviation">N</string>
+    <string name="cardinal_direction_east_abbreviation">E</string>
+    <string name="cardinal_direction_south_abbreviation">S</string>
+    <string name="cardinal_direction_west_abbreviation">W</string>
+
+    <string name="ok">OK</string>
+
+    <string name="version">Version %s</string>
+    <string name="version_description">Version name</string>
+    <string name="copyright">Copyright @ 2022 <a href="mailto:adarshdhakad50@gmail.com">Adarsh Dhakad</a></string>
+    <string name="copyright_description">Copyright notice</string>
+    <string name="license">License <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GNU GPLv3</a></string>
+    <string name="license_description">Software license</string>
+    <string name="source_code"><a href="https://github.com/Kr0oked/Compass">Source code</a></string>
+    <string name="source_code_description">Link to the Source code management</string>
+
+    <string name="sensor_accuracy_no_contact">Sensor no disponible</string>
+    <string name="sensor_accuracy_unreliable">Los valores del sensor no son confiables</string>
+    <string name="sensor_accuracy_low">precisión baja</string>
+    <string name="sensor_accuracy_medium">precisión media</string>
+    <string name="sensor_accuracy_high">precisión máxima</string>
+    <string name="sensor_accuracy_image_description">Indica gráficamente la precisión del sensor</string>
+    <string name="sensor_accuracy_text_description">Describe la precisión de los sensores.</string>
+    <string name="sensor_error_message">Sensor no disponible</string>
+    <string name="sensor_calibration_text">Puede intentar mejorar la precisión de su sensor en cualquier momento girando el dispositivo en un patrón de figura 8.</string>
+    <string name="sensor_calibration_text_description">Explica cómo mejorar la precisión del sensor.</string>
+</resources>

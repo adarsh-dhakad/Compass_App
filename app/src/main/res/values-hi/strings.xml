@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">कंपास</string>
+
+    <string name="sensor_status">सेंसर की स्थिति</string>
+    <string name="action_screen_rotation">लॉक स्क्रीन रोटेशन</string>
+    <string name="action_night_mode">नाइट मोड बदलें</string>
+    <string name="about">बारे में</string>
+
+    <string name="compass_rose_image_description">कम्पास सुई चुंबकीय उत्तर को दिखा रही है</string>
+    <string name="device_heading_indicator_image_description">दिखता है कि डिवाइस किस दिशा में इशारा कर रहा है</string>
+
+    <string name="status_degrees_text_description">कम्पास की डिग्री</string>
+    <string name="status_cardinal_direction_text_description">कम्पास की कार्डिनल दिशा</string>
+
+    <string name="cardinal_direction_north">उत्तर</string>
+    <string name="cardinal_direction_northeast">उत्तर पूर्व</string>
+    <string name="cardinal_direction_east">पूर्व</string>
+    <string name="cardinal_direction_southeast">दक्षिण-पूर्व</string>
+    <string name="cardinal_direction_south">दक्षिण</string>
+    <string name="cardinal_direction_southwest">दक्षिण पश्चिम</string>
+    <string name="cardinal_direction_west">पश्चिम</string>
+    <string name="cardinal_direction_northwest">उत्तर पश्चिम</string>
+
+    <string name="cardinal_direction_north_abbreviation">उ.</string>
+    <string name="cardinal_direction_east_abbreviation">पू.</string>
+    <string name="cardinal_direction_south_abbreviation">द.</string>
+    <string name="cardinal_direction_west_abbreviation">प.</string>
+
+    <string name="ok">ठीक है</string>
+
+    <string name="version">Version %s</string>
+    <string name="version_description">Version name</string>
+    <string name="copyright">Copyright @ 2022 <a href="mailto:adarshdhakad50@gmail.com">आदर्श धाकड़</a></string>
+    <string name="copyright_description">Copyright notice</string>
+    <string name="license">License <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GNU GPLv3</a></string>
+    <string name="license_description">Software license</string>
+    <string name="source_code"><a href="https://github.com/Kr0oked/Compass">Source code</a></string>
+    <string name="source_code_description">Link to the Source code management</string>
+
+    <string name="sensor_accuracy_no_contact">सेंसर उपलब्ध नहीं है</string>
+    <string name="sensor_accuracy_unreliable">सेंसर मान अविश्वसनीय हैं</string>
+    <string name="sensor_accuracy_low">कम सटीकता</string>
+    <string name="sensor_accuracy_medium">औसत सटीकता</string>
+    <string name="sensor_accuracy_high">अधिकतम सटीकता</string>
+    <string name="sensor_accuracy_image_description">रेखीय रूप से सेंसर सटीकता का संकेत देता है</string>
+    <string name="sensor_accuracy_text_description">सेंसर सटीकता का वर्णन करता है</string>
+    <string name="sensor_error_message">सेंसर उपलब्ध नहीं है</string>
+    <string name="sensor_calibration_text">आप किसी भी समय डिवाइस को आकृति 8 पैटर्न में घुमाकर अपने सेंसर की सटीकता में सुधार करने का प्रयास कर सकते हैं।</string>
+    <string name="sensor_calibration_text_description">बताता है कि सेंसर सटीकता में सुधार कैसे करें</string>
+</resources>

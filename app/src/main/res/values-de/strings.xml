@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kompass</string>
+
+    <string name="sensor_status">Sensor Status</string>
+    <string name="action_screen_rotation">Bildschirmausrichtung sperren</string>
+    <string name="action_night_mode">Nachtmodus wechseln</string>
+    <string name="about">Über die App</string>
+
+    <string name="compass_rose_image_description">Windrose die den magnetischen Norden anzeigt</string>
+    <string name="device_heading_indicator_image_description">Gibt die Richtung an in die das Gerät zeigt</string>
+
+    <string name="status_degrees_text_description">Grad Anzahl des Kompass</string>
+    <string name="status_cardinal_direction_text_description">Himmelsrichtung des Kompass</string>
+
+    <string name="cardinal_direction_north">Norden</string>
+    <string name="cardinal_direction_northeast">Nordost</string>
+    <string name="cardinal_direction_east">Osten</string>
+    <string name="cardinal_direction_southeast">Südost</string>
+    <string name="cardinal_direction_south">Süden</string>
+    <string name="cardinal_direction_southwest">Südwest</string>
+    <string name="cardinal_direction_west">West</string>
+    <string name="cardinal_direction_northwest">Nordwest</string>
+
+    <string name="cardinal_direction_north_abbreviation">N</string>
+    <string name="cardinal_direction_east_abbreviation">O</string>
+    <string name="cardinal_direction_south_abbreviation">S</string>
+    <string name="cardinal_direction_west_abbreviation">W</string>
+
+    <string name="ok">OK</string>
+
+    <string name="version">Version %s</string>
+    <string name="version_description">Versionsname</string>
+    <string name="copyright">Copyright @ 2021 <a href="mailto:philipp.bobek@mailbox.org">Philipp Bobek</a></string>
+    <string name="copyright_description">Copyright Hinweis</string>
+    <string name="license">Lizenz <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GNU GPLv3</a></string>
+    <string name="license_description">Softwarelizenz</string>
+    <string name="source_code"><a href="https://github.com/Kr0oked/Compass">Quelltext</a></string>
+    <string name="source_code_description">Link zur Quelltext Verwaltung</string>
+
+    <string name="sensor_accuracy_no_contact">Sensor nicht verfügbar</string>
+    <string name="sensor_accuracy_unreliable">Sensor Werte sind unzuverlässig</string>
+    <string name="sensor_accuracy_low">Niedrige Genauigkeit</string>
+    <string name="sensor_accuracy_medium">Durchschnittliche Genauigkeit</string>
+    <string name="sensor_accuracy_high">Maximale Genauigkeit</string>
+    <string name="sensor_accuracy_image_description">Zeigt grafisch die Genauigkeit des Sensors an</string>
+    <string name="sensor_accuracy_text_description">Beschreibt die Genauigkeit des Sensors</string>
+    <string name="sensor_error_message">Sensor nicht verfügbar</string>
+    <string name="sensor_calibration_text">Sie können jederzeit versuchen die Genauigkeit ihres Sensors zu erhöhen indem sie das Gerät mehrfach in Form einer 8 rotieren.</string>
+    <string name="sensor_calibration_text_description">Eklärt wie die Genauigkeit des Sensors erhöht werden kann</string>
+</resources>
