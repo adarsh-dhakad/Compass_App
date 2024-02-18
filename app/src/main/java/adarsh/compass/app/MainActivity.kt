@@ -54,7 +54,10 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         setSupportActionBar(binding.toolbar)
-    //    MobileAds.initialize(this) {}
+        val conf = RequestConfiguration.Builder()
+            .setTagForChildDirectedTreatment(RequestConfiguration.TAG_FOR_CHILD_DIRECTED_TREATMENT_TRUE).build()
+        MobileAds.setRequestConfiguration(conf)
+        MobileAds.initialize(this) {}
         mAdView = binding.contentMain.adView
         bannerAds()
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
