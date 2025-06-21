@@ -1,8 +1,6 @@
 package soulheart.compass.app
 
-import soulheart.compass.app.databinding.AboutAlertDialogViewBinding
-import soulheart.compass.app.databinding.ActivityMainBinding
-import soulheart.compass.app.databinding.SensorAlertDialogViewBinding
+//import com.google.android.gms.ads.*
 import android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LOCKED
 import android.content.pm.ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
 import android.content.pm.PackageInfo
@@ -11,28 +9,44 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
-import android.hardware.SensorManager.*
+import android.hardware.SensorManager.SENSOR_DELAY_FASTEST
+import android.hardware.SensorManager.SENSOR_STATUS_ACCURACY_HIGH
+import android.hardware.SensorManager.SENSOR_STATUS_ACCURACY_LOW
+import android.hardware.SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM
+import android.hardware.SensorManager.SENSOR_STATUS_NO_CONTACT
+import android.hardware.SensorManager.SENSOR_STATUS_UNRELIABLE
 import android.os.Build
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.util.Log
-import android.view.*
+import android.view.Display
+import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuItem
+import android.view.Surface
+import android.view.View
+import androidx.activity.enableEdgeToEdge
 import androidx.annotation.DrawableRes
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate.*
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
+import androidx.appcompat.app.AppCompatDelegate.NightMode
+import androidx.appcompat.app.AppCompatDelegate.getDefaultNightMode
+import androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import soulheart.compass.app.databinding.AboutAlertDialogViewBinding
+import soulheart.compass.app.databinding.ActivityMainBinding
+import soulheart.compass.app.databinding.SensorAlertDialogViewBinding
 import soulheart.compass.app.model.Azimuth
 import soulheart.compass.app.model.DisplayRotation
 import soulheart.compass.app.model.RotationVector
 import soulheart.compass.app.model.SensorAccuracy
 import soulheart.compass.app.util.MathUtils
 import soulheart.compass.app.view.ObservableSensorAccuracy
-import android.os.Handler
-import android.os.Looper
-//import com.google.android.gms.ads.*
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import java.util.concurrent.TimeUnit
-import kotlin.math.pow
 
 
 const val OPTION_INSTRUMENTED_TEST = "INSTRUMENTED_TEST"
@@ -51,7 +65,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        enableEdgeToEdge()
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         setSupportActionBar(binding.toolbar)
 //        val conf = RequestConfiguration.Builder()
@@ -60,6 +74,13 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 //        MobileAds.initialize(this) {}
 //        mAdView = binding.contentMain.adView
 //        bannerAds()
+        ViewCompat.setOnApplyWindowInsetsListener(
+            binding.root
+        ) { v: View, insets: WindowInsetsCompat ->
+            val systemBars: androidx.core.graphics.Insets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
     }
 
