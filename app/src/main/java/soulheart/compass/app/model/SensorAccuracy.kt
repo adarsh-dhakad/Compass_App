@@ -1,6 +1,6 @@
-package adarsh.compass.app.model
+package soulheart.compass.app.model
 
-import adarsh.compass.app.R
+import soulheart.compass.app.R
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 

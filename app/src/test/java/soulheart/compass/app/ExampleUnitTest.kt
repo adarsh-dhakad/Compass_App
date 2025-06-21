@@ -1,4 +1,4 @@
-package adarsh.compass.app
+package soulheart.compass.app
 
 import org.junit.Test
 

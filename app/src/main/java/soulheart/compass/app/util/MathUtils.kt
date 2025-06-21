@@ -1,10 +1,10 @@
-package adarsh.compass.app.util
+package soulheart.compass.app.util
 
 import android.hardware.SensorManager
-import adarsh.compass.app.model.Azimuth
-import adarsh.compass.app.model.DisplayRotation
-import adarsh.compass.app.model.DisplayRotation.*
-import adarsh.compass.app.model.RotationVector
+import soulheart.compass.app.model.Azimuth
+import soulheart.compass.app.model.DisplayRotation
+import soulheart.compass.app.model.DisplayRotation.*
+import soulheart.compass.app.model.RotationVector
 
 private const val AZIMUTH = 0
 private const val AXIS_SIZE = 3

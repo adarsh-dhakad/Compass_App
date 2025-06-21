@@ -1,8 +1,8 @@
-package adarsh.compass.app
+package soulheart.compass.app
 
-import adarsh.compass.app.databinding.AboutAlertDialogViewBinding
-import adarsh.compass.app.databinding.ActivityMainBinding
-import adarsh.compass.app.databinding.SensorAlertDialogViewBinding
+import soulheart.compass.app.databinding.AboutAlertDialogViewBinding
+import soulheart.compass.app.databinding.ActivityMainBinding
+import soulheart.compass.app.databinding.SensorAlertDialogViewBinding
 import android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LOCKED
 import android.content.pm.ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
 import android.content.pm.PackageInfo
@@ -21,15 +21,15 @@ import androidx.annotation.DrawableRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate.*
 import androidx.databinding.DataBindingUtil
-import adarsh.compass.app.model.Azimuth
-import adarsh.compass.app.model.DisplayRotation
-import adarsh.compass.app.model.RotationVector
-import adarsh.compass.app.model.SensorAccuracy
-import adarsh.compass.app.util.MathUtils
-import adarsh.compass.app.view.ObservableSensorAccuracy
+import soulheart.compass.app.model.Azimuth
+import soulheart.compass.app.model.DisplayRotation
+import soulheart.compass.app.model.RotationVector
+import soulheart.compass.app.model.SensorAccuracy
+import soulheart.compass.app.util.MathUtils
+import soulheart.compass.app.view.ObservableSensorAccuracy
 import android.os.Handler
 import android.os.Looper
-import com.google.android.gms.ads.*
+//import com.google.android.gms.ads.*
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.util.concurrent.TimeUnit
 import kotlin.math.pow
@@ -42,8 +42,8 @@ private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity(), SensorEventListener {
 
     private val observableSensorAccuracy = ObservableSensorAccuracy(SensorAccuracy.NO_CONTACT)
-    lateinit var mAdView: AdView
-    lateinit var adRequest:AdRequest
+//    lateinit var mAdView: AdView
+//    lateinit var adRequest:AdRequest
     private lateinit var binding: ActivityMainBinding
     private lateinit var sensorManager: SensorManager
 
@@ -54,12 +54,12 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         setSupportActionBar(binding.toolbar)
-        val conf = RequestConfiguration.Builder()
-            .setTagForChildDirectedTreatment(RequestConfiguration.TAG_FOR_CHILD_DIRECTED_TREATMENT_TRUE).build()
-        MobileAds.setRequestConfiguration(conf)
-        MobileAds.initialize(this) {}
-        mAdView = binding.contentMain.adView
-        bannerAds()
+//        val conf = RequestConfiguration.Builder()
+//            .setTagForChildDirectedTreatment(RequestConfiguration.TAG_FOR_CHILD_DIRECTED_TREATMENT_TRUE).build()
+//        MobileAds.setRequestConfiguration(conf)
+//        MobileAds.initialize(this) {}
+//        mAdView = binding.contentMain.adView
+//        bannerAds()
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
     }
 
@@ -308,45 +308,45 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         }
     }
 
-    private fun bannerAds() {
-        adRequest = AdRequest.Builder()
-            .build()
-        var retryAttempt = 0
-        mAdView.loadAd(adRequest)
-        mAdView.adListener = object : AdListener() {
-            override fun onAdLoaded() {
-                retryAttempt = 0
-            }
-
-            override fun onAdFailedToLoad(adError: LoadAdError) {
-                // We recommend retrying with exponentially higher delays up to a maximum delay (in this case 64 seconds)
-                // 2 power 6 = 64
-                retryAttempt++
-                val delayMillis: Long = TimeUnit.SECONDS.toMillis(
-                    2.0.pow(6.coerceAtMost(retryAttempt).toDouble()).toLong()
-                )
-
-
-                Handler(Looper.getMainLooper()).postDelayed(
-                    {
-                        mAdView.loadAd(adRequest)
-                    },
-                    delayMillis
-                )
-            }
-
-            override fun onAdOpened() {
-                //         mAdView.visibility = View.GONE
-            }
-
-            override fun onAdClicked() {
-                //        mAdView.visibility = View.GONE
-            }
-
-            override fun onAdClosed() {
-                //      mAdView.visibility = View.GONE
-            }
-        }
-
-    }
+//    private fun bannerAds() {
+//        adRequest = AdRequest.Builder()
+//            .build()
+//        var retryAttempt = 0
+//        mAdView.loadAd(adRequest)
+//        mAdView.adListener = object : AdListener() {
+//            override fun onAdLoaded() {
+//                retryAttempt = 0
+//            }
+//
+//            override fun onAdFailedToLoad(adError: LoadAdError) {
+//                // We recommend retrying with exponentially higher delays up to a maximum delay (in this case 64 seconds)
+//                // 2 power 6 = 64
+//                retryAttempt++
+//                val delayMillis: Long = TimeUnit.SECONDS.toMillis(
+//                    2.0.pow(6.coerceAtMost(retryAttempt).toDouble()).toLong()
+//                )
+//
+//
+//                Handler(Looper.getMainLooper()).postDelayed(
+//                    {
+//                        mAdView.loadAd(adRequest)
+//                    },
+//                    delayMillis
+//                )
+//            }
+//
+//            override fun onAdOpened() {
+//                //         mAdView.visibility = View.GONE
+//            }
+//
+//            override fun onAdClicked() {
+//                //        mAdView.visibility = View.GONE
+//            }
+//
+//            override fun onAdClosed() {
+//                //      mAdView.visibility = View.GONE
+//            }
+//        }
+//
+//    }
 }

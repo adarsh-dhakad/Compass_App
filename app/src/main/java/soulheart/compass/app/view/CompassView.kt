@@ -1,7 +1,7 @@
-package adarsh.compass.app.view
+package soulheart.compass.app.view
 
-import adarsh.compass.app.R
-import adarsh.compass.app.databinding.CompassViewBinding
+import soulheart.compass.app.R
+import soulheart.compass.app.databinding.CompassViewBinding
 import android.content.Context
 import android.util.AttributeSet
 import android.util.TypedValue
@@ -11,7 +11,7 @@ import androidx.annotation.AnyRes
 import androidx.annotation.IdRes
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
-import adarsh.compass.app.model.Azimuth
+import soulheart.compass.app.model.Azimuth
 import kotlin.math.roundToInt
 
 class CompassView(context: Context, attributes: AttributeSet) : ConstraintLayout(context, attributes) {

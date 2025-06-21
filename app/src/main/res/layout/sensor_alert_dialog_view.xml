@@ -57,7 +57,7 @@
 
         <variable
                 name="sensorAccuracy"
-                type="adarsh.compass.app.view.ObservableSensorAccuracy" />
+                type="soulheart.compass.app.view.ObservableSensorAccuracy" />
     </data>
 
 </layout>

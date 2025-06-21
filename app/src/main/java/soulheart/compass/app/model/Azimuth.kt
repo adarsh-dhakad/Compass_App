@@ -1,4 +1,4 @@
-package adarsh.compass.app.model
+package soulheart.compass.app.model
 
 class Azimuth(_degrees: Float) {
 

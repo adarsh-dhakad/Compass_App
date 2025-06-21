@@ -1,4 +1,4 @@
-package adarsh.compass.app
+package soulheart.compass.app
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

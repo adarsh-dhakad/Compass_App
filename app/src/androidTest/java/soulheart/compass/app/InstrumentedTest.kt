@@ -16,10 +16,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package adarsh.compass.app
+package soulheart.compass.app
 
-import adarsh.compass.app.model.Azimuth
-import adarsh.compass.app.model.SensorAccuracy
+import soulheart.compass.app.model.Azimuth
+import soulheart.compass.app.model.SensorAccuracy
 import android.content.Intent
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.Espresso.onView

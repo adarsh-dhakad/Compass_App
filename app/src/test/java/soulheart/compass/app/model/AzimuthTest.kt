@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package adarsh.compass.app.model
+package soulheart.compass.app.model
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

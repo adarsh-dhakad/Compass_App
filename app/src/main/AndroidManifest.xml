@@ -12,9 +12,9 @@
             android:name="android.hardware.sensor.gyroscope"
             android:required="true" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="com.google.android.gms.permission.AD_ID"
-       android:value = "ca-app-pub-9507149330025451~4782667827"
-       />
+<!--    <uses-permission android:name="com.google.android.gms.permission.AD_ID"-->
+<!--       android:value = "ca-app-pub-9507149330025451~4782667827"-->
+<!--       />-->
     <application
             android:name=".MyApplication"
             android:allowBackup="true"
@@ -36,9 +36,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-9507149330025451~4782667827" />
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--            android:value="ca-app-pub-9507149330025451~4782667827" />-->
     </application>
-    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+<!--    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>-->
 </manifest>

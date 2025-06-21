@@ -8,27 +8,27 @@ plugins {
 android {
     signingConfigs {
         debug {
-            storeFile file('C:\\Users\\Adarsh Dhakad\\keystore\\compass.jks')
-            storePassword 'adarshd'
-            keyAlias 'key0'
-            keyPassword 'adarshd'
+//            storeFile file('C:\\Users\\Adarsh Dhakad\\keystore\\compass.jks')
+//            storePassword 'adarshd'
+//            keyAlias 'key0'
+//            keyPassword 'adarshd'
         }
         release {
-            storeFile file('C:\\Users\\Adarsh Dhakad\\keystore\\compass.jks')
-            keyAlias 'key0'
-            storePassword 'adarshd'
-            keyPassword 'adarshd'
+//            storeFile file('C:\\Users\\Adarsh Dhakad\\keystore\\compass.jks')
+//            keyAlias 'key0'
+//            storePassword 'adarshd'
+//            keyPassword 'adarshd'
         }
     }
-    namespace 'adarsh.compass.app'
-    compileSdk 33
+    namespace 'soulheart.compass.app'
+    compileSdk 35
 
     defaultConfig {
-        applicationId "adarsh.compass.app"
+        applicationId "soulheart.compass.app"
         minSdk 21
-        targetSdk 33
-        versionCode 23
-        versionName "2.2"
+        targetSdk 35
+        versionCode 3
+        versionName "0.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -46,8 +46,8 @@ android {
         dataBinding true
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -56,14 +56,14 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.appcompat:appcompat:1.6.0'
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.core:core-ktx:1.16.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
 //    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 //    implementation 'com.google.firebase:firebase-crashlytics:18.3.2'
 //    implementation 'com.google.firebase:firebase-analytics:21.2.0'
 //    testImplementation 'junit:junit:4.13.2'
 //    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
 //    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-     implementation 'com.google.android.gms:play-services-ads:21.4.0'
+//     implementation 'com.google.android.gms:play-services-ads:21.4.0'
 }

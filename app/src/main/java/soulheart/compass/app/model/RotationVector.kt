@@ -1,4 +1,4 @@
-package adarsh.compass.app.model
+package soulheart.compass.app.model
 
 data class RotationVector(val x: Float, val y: Float, val z: Float) {
 

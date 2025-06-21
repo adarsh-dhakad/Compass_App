@@ -1,4 +1,4 @@
-package adarsh.compass.app.model
+package soulheart.compass.app.model
 
 enum class DisplayRotation {
     ROTATION_0,
