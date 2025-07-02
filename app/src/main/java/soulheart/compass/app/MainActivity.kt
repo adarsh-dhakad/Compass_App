@@ -289,7 +289,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
     internal fun setAzimuth(azimuth: Azimuth) {
         binding.contentMain.compass.setAzimuth(azimuth)
-        Log.v(TAG, " $azimuth")
+       // Log.v(TAG, " $azimuth")
     }
 
     private fun updateSensorStatusIcon() {

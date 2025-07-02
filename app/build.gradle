@@ -8,16 +8,16 @@ plugins {
 android {
     signingConfigs {
         debug {
-//            storeFile file('C:\\Users\\Adarsh Dhakad\\keystore\\compass.jks')
-//            storePassword 'adarshd'
-//            keyAlias 'key0'
-//            keyPassword 'adarshd'
+            storeFile file('/Users/adarsh/AndroidStudioProjects/Compass_App/app/compass-new')
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
         }
         release {
-//            storeFile file('C:\\Users\\Adarsh Dhakad\\keystore\\compass.jks')
-//            keyAlias 'key0'
-//            storePassword 'adarshd'
-//            keyPassword 'adarshd'
+            storeFile file('/Users/adarsh/AndroidStudioProjects/Compass_App/app/compass-new')
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
         }
     }
     namespace 'soulheart.compass.app'
@@ -27,8 +27,8 @@ android {
         applicationId "soulheart.compass.app"
         minSdk 21
         targetSdk 35
-        versionCode 7
-        versionName "0.7"
+        versionCode 9
+        versionName "0.9"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -40,6 +40,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             debuggable false
             jniDebuggable false
+            signingConfig signingConfigs.release
         }
     }
     buildFeatures {
