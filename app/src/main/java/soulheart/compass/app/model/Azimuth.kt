@@ -37,7 +37,7 @@ class Azimuth(_degrees: Float) {
     }
 
     override fun toString(): String {
-        return "Azimuth(degrees=$degrees)"
+        return "(degrees=$degrees)"
     }
 }
 
